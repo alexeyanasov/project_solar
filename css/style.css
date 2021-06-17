@@ -205,6 +205,14 @@ ul {
   cursor: pointer;
 }
 
+.slick-arrow path {
+  transition: fill 0.5s;
+}
+
+.slick-arrow:hover path {
+  fill: #a9a32a;
+}
+
 .slick-right {
   left: 340px;
 }
@@ -234,11 +242,89 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 150px;
 }
+
 .blockquote__text {
   max-width: 670px;
   margin: 0 auto;
   font-size: 42px;
   line-height: 57px;
   color: #fff;
+}
+
+.clients {
+  margin-bottom: 150px;
+}
+
+.clients-slider__box {
+  display: flex;
+}
+
+.clients-slider__box-img {
+  flex-basis: 510px;
+  margin-right: 90px;
+  margin-bottom: 30px;
+}
+
+.clients-slider__box-title {
+  max-width: 478px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.clients-slider__box-list {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.clients-slider__box-item {
+  margin-bottom: 15px;
+}
+
+.step {
+  margin-bottom: 150px;
+}
+
+.step__inner {
+  display: flex;
+}
+
+.step__img {
+  flex-basis: 600px;
+  object-fit: cover;
+}
+
+.step__content {
+  margin-right: 90px;
+}
+
+.step__list {
+  list-style: none;
+  counter-reset: number;
+}
+
+.step__list-item {
+  counter-increment: number;
+  margin-bottom: 30px;
+}
+
+.step__list-item::before {
+  content: "0" counter(number);
+  margin-bottom: 11px;
+  display: block;
+  color: #868585;
+}
+
+.step__list-item:nth-child(n + 10)::before {
+  content: counter(number);
+}
+
+.step__list-title {
+  margin-bottom: 2px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
 }
