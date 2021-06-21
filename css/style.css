@@ -442,7 +442,8 @@ ul {
 
   .service__img {
     width: 100%;
-    height: 400px;
+    max-height: 670px;
+    min-height: 300px;
   }
 
   .step__inner {
@@ -615,7 +616,7 @@ ul {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 340px) {
   .info-slider {
     width: 280px;
   }
